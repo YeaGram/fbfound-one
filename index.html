@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        /* border: 1px solid; */
+        list-style: none;
+        text-decoration: none;
+        color: rgb(48, 48, 48);
+        box-sizing: border-box;
+      }
+      nav ul li a {
+        font-family: "Poppins";
+        font-weight: lighter;
+        font-size: 0.8rem;
+        line-height: 100%;
+      }
+      .sosmed li a {
+        display: block;
+        margin: 0.2rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 10rem;
+        background-color: rgb(211, 211, 211);
+      "
+    >
+      <div style="padding: 5rem 0px">
+        <header style="display: flex; justify-content: space-between">
+          <div style="display: flex; justify-content: space-between">
+            <h2
+              style="
+                font-family: 'Poppins';
+                white-space: normal;
+                max-width: 150px;
+                font-size: 2.5rem;
+                line-height: 3rem;
+              "
+            >
+              Yeag Geming
+            </h2>
+            <p style="font-style: italic; padding: 0 2rem">
+              ---------- Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Project</a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
+            <div style="margin-top: 0.5rem">
+              <form action="">
+                <label for="search">
+                  <input
+                    type="search"
+                    placeholder="search.."
+                    style="padding: 0.4rem"
+                  />
+                </label>
+              </form>
+            </div>
+          </nav>
+        </header>
+        <article
+          style="
+            margin: 7rem 0;
+            background-color: white;
+            padding: 5rem 3rem;
+            display: flex;
+          "
+        >
+          <div style="width: 50%">
+            <h3 style="font-family: 'Poppins'; font-size: 1.5rem">Contact</h3>
+            <p
+              style="
+                max-width: 60%;
+                opacity: 0.7;
+                font-size: 0.9rem;
+                font-style: italic;
+              "
+            >
+              Lorem ipsum.
+            </p>
+          </div>
+          <div style="width: 50%">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam
+              cupiditate eius exercitationem voluptatibus non asperiores magni
+              qui, ex ab accusantium. Lorem ipsum dolor sit, amet consectetur
+              adipisicing elit. Hic tenetur nam reiciendis dolorum aspernatur
+              accusantium magnam reprehenderit expedita harum quod?
+            </p>
+            <div style="margin: 1.5rem 0">
+              <h4 style="font-size: 1.3rem; margin: 0.5rem 0">My Address</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                nesciunt, sapiente reiciendis recusandae repudiandae ea.
+              </p>
+              <address style="margin-top: 1.5rem 0">
+                <p>JL.lorem</p>
+                <p>Lorem, ipsum.</p>
+                <p>91019</p>
+                <p>Country</p>
+              </address>
+            </div>
+            <div>
+              <h4 style="font-size: 1.3rem; margin: 0.5rem 0">Email Me</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                nulla dolores perspiciatis iste eos commodi est sit voluptate
+                facere obcaecati consequatur corporis nemo, quibusdam doloribus.
+              </p>
+              <div style="margin: 1.5rem 0">
+                <form action="" method="">
+                  <label for="name" style="margin: 1rem 0; display: block">
+                    <div style="display: flex; margin: 0.2rem 0">
+                      <p style="font-weight: bold">Name</p>
+                      <p>(required)</p>
+                    </div>
+                    <input type="text" name="name" id="name" />
+                  </label>
+
+                  <label for="email" style="margin: 1rem 0; display: block">
+                    <div style="display: flex; margin: 0.2rem 0">
+                      <p style="font-weight: bold">Email</p>
+                      <p>(required)</p>
+                    </div>
+                    <input type="email" name="email" id="email" />
+                  </label>
+
+                  <label for="subject" style="margin: 1rem 0; display: block">
+                    <div style="display: flex; margin: 0.2rem 0">
+                      <p style="font-weight: bold">Subject</p>
+                      <p>(required)</p>
+                    </div>
+                    <input type="text" name="subject" id="subject" />
+                  </label>
+
+                  <label for="message" style="margin: 1rem 0; display: block">
+                    <div style="display: flex; margin: 0.2rem 0">
+                      <p style="font-weight: bold">Message</p>
+                      <p>(required)</p>
+                    </div>
+                    <textarea
+                      name="message"
+                      id="message"
+                      cols="30"
+                      rows="10"
+                    ></textarea>
+                  </label>
+                  <button
+                    type="submit"
+                    style="
+                      display: block;
+                      padding: 0.3rem 1.5rem;
+                      background-color: rgb(32, 29, 29);
+                      outline: none;
+                      color: white;
+                      border-radius: 2px;
+                    "
+                  >
+                    Submit
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+        <footer>
+          <hr
+            style="
+              display: block;
+              height: 5px;
+              background-color: rgb(32, 29, 29);
+            "
+          />
+          <div style="padding: 4rem 0.5rem; display: flex">
+            <div style="width: 50%">
+              <h3
+                style="
+                  font-family: 'Poppins';
+                  letter-spacing: 0.3rem;
+                  font-size: 1rem;
+                "
+              >
+                ABOUT
+              </h3>
+              <p style="margin: 1rem 0">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non,
+                ab perferendis consectetur recusandae provident earum velit,
+                incidunt cum doloremque architecto magni laboriosam odio itaque
+                debitis!
+              </p>
+              <p style="margin: 3rem 0">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
+                accusantium error quaerat, possimus eveniet commodi!
+              </p>
+            </div>
+            <div
+              style="
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+              "
+            >
+              <div style="width: 60%; display: flex">
+                <div style="width: 50%">
+                  <h5
+                    style="
+                      font-family: 'Poppins';
+                      letter-spacing: 0.3rem;
+                      font-size: 1rem;
+                    "
+                  >
+                    SUBSCRIBE
+                  </h5>
+                  <p style="margin-top: 0.5rem">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Similique, beatae!
+                  </p>
+                  <form action="" style="display: block; margin-top: 2rem">
+                    <input
+                      style="
+                        margin: 0.8rem 0;
+                        display: block;
+                        width: 100%;
+                        padding: 0.4rem;
+                      "
+                      type="email"
+                      name=""
+                      id=""
+                      placeholder="email address"
+                    />
+                    <button
+                      type="submit"
+                      style="
+                        display: block;
+                        width: 100%;
+                        padding: 0.3rem 1.5rem;
+                        background-color: rgb(32, 29, 29);
+                        outline: none;
+                        color: white;
+                        border-radius: 2px;
+                      "
+                    >
+                      Subscribe
+                    </button>
+                  </form>
+                </div>
+                <div
+                  style="
+                    padding-bottom: 1rem;
+                    width: 50%;
+                    padding: 0rem 1.2rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                  "
+                >
+                  <address style="line-height: 100%">
+                    <p>JL.lorem</p>
+                    <p>Lorem, ipsum.</p>
+                    <p>91019</p>
+                    <p>Country</p>
+                  </address>
+                  <ul class="sosmed">
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Reddit</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
