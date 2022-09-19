@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  /* border: 1px solid; */
+  list-style: none;
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+  box-sizing: border-box;
+}
+body > .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 10rem;
+  background-color: rgb(211, 211, 211);
+}
+body {
+  overflow-x: hidden;
+}
+body > .wrapper::after {
+  display: block;
+  content: "";
+  background-color: black;
+  height: 5rem;
+  width: 100vw;
+  z-index: 5;
+}
+body > .wrapper .container {
+  padding: 5rem 0px;
+}
+body > .wrapper .container header,
+body > .wrapper .container header > div {
+  display: flex;
+  justify-content: space-between;
+}
+/*  */
+
+.title {
+  font-family: "Poppins";
+  white-space: normal;
+  max-width: 150px;
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+.title ~ p {
+  font-style: italic;
+  padding: 0 2rem;
+}
+@media only screen and (max-width: 992px) {
+  header > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .title ~ p {
+    font-style: italic;
+    margin-top: 0.5rem;
+    padding-left: 0;
+    padding-right: 2rem;
+  }
+
+  footer .wrapper {
+    padding: 4rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  footer .right .wrapperRight {
+    width: 100%;
+    display: flex;
+  }
+  footer .setengah {
+    width: 100%;
+  }
+}
+.subtitle {
+  font-family: "Poppins";
+  font-size: 1.5rem;
+}
+.subtitle ~ p {
+  max-width: 60%;
+  opacity: 0.7;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+nav div {
+  margin-top: 0.5rem;
+}
+nav input[type="search"] {
+  padding: 0.4rem;
+}
+nav a {
+  font-family: "Poppins";
+  font-weight: lighter;
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+article {
+  margin: 7rem 0;
+  background-color: white;
+  padding: 5rem 3rem;
+  display: flex;
+}
+.setengah {
+  width: 50%;
+}
+article .right .rightcontent {
+  margin: 1.5rem 0;
+}
+article h4 {
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+  font-family: "Oswald";
+}
+article address {
+  display: block;
+  margin-top: 1rem;
+}
+article .forms {
+  margin: 1.5rem 0;
+}
+article .formstitle {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  font-family: "Poppins";
+}
+article .formstitle p:first-child {
+  font-weight: bold;
+}
+article .formstitle p:last-child {
+  font-size: 0.9rem;
+}
+article button[type="submit"] {
+  display: block;
+  padding: 0.3rem 1.5rem;
+  background-color: rgb(32, 29, 29);
+  outline: none;
+  color: white;
+  border-radius: 2px;
+}
+footer hr {
+  display: block;
+  height: 5px;
+  background-color: rgb(32, 29, 29);
+}
+footer .wrapper {
+  padding: 4rem 0.5rem;
+  display: flex;
+  align-items: center;
+}
+footer .left p {
+  margin: 1rem 0;
+}
+footer .right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+footer .right .wrapperRight {
+  width: 60%;
+  display: flex;
+}
+footer .wrapperRight .navigationWrapper {
+  padding: 0rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .wrapperRight p {
+  margin-top: 0.5rem;
+}
+footer.wrapperRight form {
+  display: block;
+  margin-top: 2rem;
+}
+footer .wrapperRight input[type="email"] {
+  margin: 0.8rem 0;
+  display: block;
+  width: 100%;
+  padding: 0.4rem;
+}
+footer h5 {
+  font-family: "Poppins";
+  letter-spacing: 0.3rem;
+  font-size: 1rem;
+}
+footer .navigationWrapper > * {
+  margin: 1rem 0;
+}
+footer .sosmed li a {
+  display: block;
+  margin: 0.2rem 0;
+}
+footer button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 0.3rem 1.5rem;
+  background-color: rgb(32, 29, 29);
+  outline: none;
+  color: white;
+  border-radius: 2px;
+}
+@media only screen and (max-width: 768px) {
+  body > .wrapper .container header,
+  body > .wrapper .container header > div {
+    flex-direction: column;
+  }
+  header nav {
+    padding: 1rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  header > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .title ~ p {
+    font-style: italic;
+    margin-top: 0.5rem;
+    padding-left: 0;
+    padding-right: 2rem;
+  }
+  article {
+    flex-direction: column;
+  }
+  article .right.setengah {
+    margin-top: 1rem;
+    width: 100%;
+  }
+  footer .wrapper {
+    padding: 4rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  footer .right .wrapperRight {
+    width: 100%;
+    display: flex;
+  }
+  footer .setengah {
+    width: 100%;
+  }
+}
